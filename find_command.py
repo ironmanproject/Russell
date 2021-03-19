@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 
-
 def find_commands(keywords, phrase):
   if 'weather' in keywords:
     if 'week' in keywords:
