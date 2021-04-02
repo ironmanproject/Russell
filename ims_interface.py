@@ -77,11 +77,16 @@ def main():
     
     #Draw on the screen
     def redraw():
+        box = 0
+        
         # Fill the background with white
         screen.fill((0, 20, 20))
 
         # Add box modules
-        pygame.draw.polygon(screen, blue, [(width - 400, 230), (width - 400, 86), (width - 350, 40), (width - 100, 40), (width - 100, 230)], 5)
+        while (box < depth-250):
+            pygame.draw.polygon(screen, blue, [(width - 400, box + 230), (width - 400, box + 86), (width - 350, box + 40), (width - 100, box + 40), (width - 100, box + 230)], 5)
+            
+            box += 250
         
         # Draw grid on background
         for i in range(25, width, 50):
