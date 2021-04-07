@@ -16,8 +16,8 @@ resolution_string, junk = p2.communicate()
 resolution = resolution_string.split()[0]
 resolution = resolution.decode('utf-8')
 width, height = resolution.split('x')
-width = int(width)-75
-depth = int(height)-70
+width = int(width)
+depth = int(height)
 
 # Initialize pygame
 pygame.init()
